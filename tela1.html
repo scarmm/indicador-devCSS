@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela 1</title>
+</head>
+
+<body>
+    <style>
+        body {
+            align-content: space-between;
+            justify-content: center;
+            height: 100vh;
+            background-color: #e7fde1;
+            display: flex;
+            align-items: center;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 400px;
+        }
+
+        label {
+            display: inline-block;
+            width: 90px;
+            text-align: left;
+            color: rgb(82, 153, 82);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 250px;
+        }
+
+        textarea {
+            vertical-align: top;
+            resize: vertical;
+            width: 250px;
+            overflow-y: scroll;
+            height: 90px;
+            font: 1em sans-serif;
+            border: 1px solid #999;
+        }
+
+        legend {
+            display: flex;
+            align-content: center;
+            justify-content: flex-start;
+            border: 2px solid #a1d193;
+            padding: 3px 15px 3px 15px;
+            margin: 2px;
+            background-color: rgb(255, 199, 199);
+            color: rgb(160, 29, 29);
+            font-weight: bold;
+        }
+
+        fieldset {
+            padding: 10px;
+            border: 2px solid #a1d193;
+            background: rgb(255, 251, 240);
+            background: linear-gradient(180deg, rgb(255, 254, 253) 20%, rgb(148, 218, 148) 80%);
+        }
+    </style>
+
+    <form method="post">
+        <fieldset>
+            <legend>Fale Conosco</legend>
+            <div>
+                <label>Nome:</label>
+                <input type="text" />
+            </div>
+            <div>
+                <label>E-mail:</label>
+                <input type="email" />
+            </div>
+            <div>
+                <label>Mensagem:</label>
+                <textarea></textarea>
+            </div>
+
+            <div class="button">
+                <button type="submit">Enviar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
